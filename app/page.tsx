@@ -19,17 +19,6 @@ Amplify.configure(config);
 function Example() {
   const { StorageBrowser } = createStorageBrowser({
     elements: elementsDefault,
-    config: createAmplifyAuthAdapter({
-      options: {
-        defaultPrefixes: [
-          "media-readwritedelete/",
-          "media-readonly/",
-          "shared-folder-readwrite/",
-          (identityId: string) => `protected-useronlyreadwritedelete/${identityId}/`,
-          (identityId: string) => `private-useronlyreadwritedelete/${identityId}/`,
-        ],
-      },
-    }),
   });
 
   return (
