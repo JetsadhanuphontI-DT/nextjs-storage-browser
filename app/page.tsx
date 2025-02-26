@@ -17,6 +17,7 @@ import config from "../amplify_outputs.json";
 Amplify.configure(config);
 
 function Example() {
+
   const { StorageBrowser } = createStorageBrowser({
     elements: elementsDefault,
     config: createAmplifyAuthAdapter({
@@ -45,4 +46,32 @@ function Example() {
   );
 }
 
-export default withAuthenticator(Example);
+// export default withAuthenticator(Example);
+
+function Main() {
+
+  const { StorageBrowser } = createStorageBrowser({
+    elements: elementsDefault,
+    config: createAmplifyAuthAdapter(),
+  });
+
+  return (
+    <>
+      <Button
+        marginBlockEnd="xl"
+        size="small"
+        onClick={() => {
+          signOut();
+        }}
+      >
+        Sign Out
+      </Button>
+      <StorageBrowser />
+    </>
+  );
+}
+
+
+export default withAuthenticator(Main);
+
+
