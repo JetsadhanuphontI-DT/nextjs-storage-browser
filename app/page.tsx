@@ -22,6 +22,8 @@ function Example() {
     config: createAmplifyAuthAdapter({
       options: {
         defaultPrefixes: [
+          "/",
+          "test/",
         ],
       },
     }),
