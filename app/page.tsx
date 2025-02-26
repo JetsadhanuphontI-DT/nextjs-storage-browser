@@ -55,15 +55,15 @@ function Main() {
 
   return (
     <>
-      {/* <Button
-        marginBlockEnd="xl"
+      <Button
+        // marginBlockEnd="xl"
         size="small"
         onClick={() => {
           signOut();
         }}
       >
         Sign Out
-      </Button> */}
+      </Button>
       <StorageBrowser />
     </>
   );
