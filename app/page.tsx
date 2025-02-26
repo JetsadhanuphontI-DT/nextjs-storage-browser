@@ -51,7 +51,6 @@ function Example() {
 function Main() {
 
   const { StorageBrowser } = createStorageBrowser({
-    elements: elementsDefault,
     config: createAmplifyAuthAdapter(),
   });
 
