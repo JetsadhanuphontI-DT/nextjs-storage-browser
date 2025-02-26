@@ -50,12 +50,12 @@ Amplify.configure(config);
 function Main() {
 
   const { StorageBrowser } = createStorageBrowser({
-    config: createAmplifyAuthAdapter(),
+    config: createAmplifyAuthAdapter()
   });
 
   return (
     <>
-      <Button
+      {/* <Button
         marginBlockEnd="xl"
         size="small"
         onClick={() => {
@@ -63,7 +63,7 @@ function Main() {
         }}
       >
         Sign Out
-      </Button>
+      </Button> */}
       <StorageBrowser />
     </>
   );
