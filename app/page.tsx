@@ -7,44 +7,43 @@ import { Button, withAuthenticator } from "@aws-amplify/ui-react";
 import {
   createStorageBrowser,
   createAmplifyAuthAdapter,
-  elementsDefault,
 } from "@aws-amplify/ui-react-storage/browser";
 import "@aws-amplify/ui-react-storage/styles.css";
-import "@aws-amplify/ui-react-storage/storage-browser-styles.css";
+// import "@aws-amplify/ui-react-storage/storage-browser-styles.css";
 
 import config from "../amplify_outputs.json";
 
 Amplify.configure(config);
 
-function Example() {
+// function Example() {
 
-  const { StorageBrowser } = createStorageBrowser({
-    elements: elementsDefault,
-    config: createAmplifyAuthAdapter({
-      options: {
-        defaultPrefixes: [
-          "",
-          "test/",
-        ],
-      },
-    }),
-  });
+//   const { StorageBrowser } = createStorageBrowser({
+//     elements: elementsDefault,
+//     config: createAmplifyAuthAdapter({
+//       options: {
+//         defaultPrefixes: [
+//           "",
+//           "test/",
+//         ],
+//       },
+//     }),
+//   });
 
-  return (
-    <>
-      <Button
-        marginBlockEnd="xl"
-        size="small"
-        onClick={() => {
-          signOut();
-        }}
-      >
-        Sign Out
-      </Button>
-      <StorageBrowser />
-    </>
-  );
-}
+//   return (
+//     <>
+//       <Button
+//         marginBlockEnd="xl"
+//         size="small"
+//         onClick={() => {
+//           signOut();
+//         }}
+//       >
+//         Sign Out
+//       </Button>
+//       <StorageBrowser />
+//     </>
+//   );
+// }
 
 // export default withAuthenticator(Example);
 
