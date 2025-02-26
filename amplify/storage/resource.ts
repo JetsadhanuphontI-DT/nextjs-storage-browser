@@ -20,8 +20,13 @@ export const storage = defineStorage({
 
 export const budget = defineStorage({
   name: 'budget-gosoft-545009836557',
-  isDefault: true, // identify your default storage bucket (required)
-  access: (allow: any) => ({
-    '*': [allow.authenticated.to(['read', 'write', 'delete'])]
-  })
+  isDefault: true // identify your default storage bucket (required)
 });
+
+// export const budget = defineStorage({
+//   name: 'budget-gosoft-545009836557',
+//   isDefault: true, // identify your default storage bucket (required)
+//   access: (allow: any) => ({
+//     '*': [allow.authenticated.to(['read', 'write', 'delete'])]
+//   })
+// });
