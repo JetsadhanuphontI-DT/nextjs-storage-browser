@@ -20,7 +20,6 @@ export const storage = defineStorage({
 
 export const budget = defineStorage({
   name: 'budget-gosoft',
-  bucketName: "budget-gosoft-545009836557",
   isDefault: true // identify your default storage bucket (required)
 });
 
